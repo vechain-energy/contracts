@@ -14,3 +14,4 @@
 * `yarn build` compile contracts
 * `yarn test` run test suite
 * `yarn test:watch` run test suite in watchAll mode
+* `yarn gen:interfaces` generate interfaces for all contracts

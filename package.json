@@ -18,6 +18,7 @@
   "scripts": {
     "build": "hardhat compile",
     "test": "hardhat test:jest",
-    "test:watch": "nodemon -e sol --exec 'hardhat test:jest --watch'"
+    "test:watch": "nodemon -e sol --exec 'hardhat test:jest --watch'",
+    "gen:interfaces": "yarn build; jq .abi ./artifacts/contracts/VIP180.sol/VIP180.json  | abi-to-sol IVIP180 > contracts/IVIP180.sol; jq .abi ./artifacts/contracts/VIP181.sol/VIP181.json  | abi-to-sol IVIP181 > contracts/IVIP181.sol; jq .abi ./artifacts/contracts/VIP210.sol/VIP210.json  | abi-to-sol IVIP210 > contracts/IVIP210.sol"
   }
 }
