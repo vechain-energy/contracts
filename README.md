@@ -1,6 +1,27 @@
 - This repository provides templates for formalized VeChain-Contracts-Interfaces.
 - The contracts are based on OpenZeppelin and modified mostly for naming purpose only.
 
+## Install
+
+```shell
+yarn add https://github.com/vechain-energy/contracts.git
+```
+
+**Example for VIP-180**
+
+```solidity
+pragma solidity ^0.8.0;
+
+import "@vechain.energy/contracts/VIP180.sol";
+
+contract TestVIP180 is VIP180 {
+    constructor(string memory name, string memory symbol)
+        VIP180(name, symbol)
+    {}
+}
+
+```
+
 
 ## Links
 
